@@ -1,0 +1,21 @@
+version: 1
+project:
+  title: Reproducible Machine Learning for Credit Card Fraud detection - Practical handbook
+  authors:
+    - name: Machine Learning Group (Université Libre de Bruxelles - ULB)
+      url: https://mlg.ulb.ac.be/wordpress/
+  github: https://github.com/gronchi/fraud-detection-handbook
+  bibliography:
+    - references.bib
+  binder: https://mybinder.org
+  license:
+    content: CC-BY-SA-4.0
+    code: GPL-3.0
+
+site:
+  template: book-theme
+  title: Reproducible Machine Learning for Credit Card Fraud detection - Practical handbook
+  logo: images/logo.png
+  favicon: images/favicon.ico
+  options:
+    hide_authors: true
