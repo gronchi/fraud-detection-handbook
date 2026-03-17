@@ -1,6 +1,6 @@
 version: 1
 project:
-  title: Reproducible Machine Learning for Credit Card Fraud detection - Practical handbook
+  title: Aprendizado de Máquina Reprodutível para Detecção de Fraude em Cartão de Crédito - Manual Prático
   authors:
     - name: Machine Learning Group (Université Libre de Bruxelles - ULB)
       url: https://mlg.ulb.ac.be/wordpress/
@@ -14,7 +14,7 @@ project:
 
 site:
   template: book-theme
-  title: Reproducible Machine Learning for Credit Card Fraud detection - Practical handbook
+  title: Aprendizado de Máquina Reprodutível para Detecção de Fraude em Cartão de Crédito - Manual Prático
   logo: images/logo.png
   favicon: images/favicon.ico
   options:

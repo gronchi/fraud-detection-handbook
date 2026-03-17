@@ -1,13 +1,13 @@
 format: jb-book
 root: Foreword
 parts:
-- caption: 1. Book overview
+- caption: 1. Visão geral do livro
   numbered: True
   chapters:
   - file: Chapter_1_BookContent/BookContent
   - file: Chapter_1_BookContent/BookContributions
   - file: Chapter_1_BookContent/HowToUse
-- caption: 2. Background
+- caption: 2. Contexto
   numbered: True
   chapters:
   - file: Chapter_2_Background/Introduction
@@ -15,7 +15,7 @@ parts:
   - file: Chapter_2_Background/FDS
   - file: Chapter_2_Background/MachineLearningForFraudDetection
   - file: Chapter_2_Background/Summary
-- caption: 3. Getting started
+- caption: 3. Primeiros passos
   numbered: True
   chapters:
   - file: Chapter_3_GettingStarted/Introduction
@@ -24,7 +24,7 @@ parts:
   - file: Chapter_3_GettingStarted/BaselineModeling
   - file: Chapter_3_GettingStarted/Baseline_RealWorldData
   - file: Chapter_3_GettingStarted/Summary
-- caption: 4. Performance metrics
+- caption: 4. Métricas de desempenho
   numbered: True
   chapters:
   - file: Chapter_4_PerformanceMetrics/Introduction
@@ -33,7 +33,7 @@ parts:
   - file: Chapter_4_PerformanceMetrics/TopKBased
   - file: Chapter_4_PerformanceMetrics/Assessment_RealWorldData
   - file: Chapter_4_PerformanceMetrics/Summary
-- caption: 5. Model validation and model selection
+- caption: 5. Validação e seleção de modelos
   numbered: True
   chapters:
   - file: Chapter_5_ModelValidationAndSelection/Introduction
@@ -41,7 +41,7 @@ parts:
   - file: Chapter_5_ModelValidationAndSelection/ModelSelection
   - file: Chapter_5_ModelValidationAndSelection/ModelSelection_RealWorldData
   - file: Chapter_5_ModelValidationAndSelection/Summary
-- caption: 6. Imbalanced learning
+- caption: 6. Aprendizado com dados desbalanceados
   numbered: True
   chapters:
   - file: Chapter_6_ImbalancedLearning/Introduction
@@ -50,7 +50,7 @@ parts:
   - file: Chapter_6_ImbalancedLearning/Ensembling
   - file: Chapter_6_ImbalancedLearning/Imbalanced_RealWorldData
   - file: Chapter_6_ImbalancedLearning/Summary
-- caption: 7. Deep learning
+- caption: 7. Aprendizado profundo
   numbered: true
   chapters:
   - file: Chapter_7_DeepLearning/Introduction
@@ -66,7 +66,7 @@ parts:
 #  - file: Chapter_x_Interpretability/InterpretabiltySection2
 #  - file: Chapter_x_Interpretability/InterpretabiltySection3
 #  - file: Chapter_x_Interpretability/InterpretabiltySection4
-- caption: References
+- caption: Referências
   numbered: True
   chapters:
   - file: Chapter_References/shared_functions
