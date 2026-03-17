@@ -1,35 +1,35 @@
-# Book content and intended audience
+# Conteúdo do livro e público-alvo
 
-## Table of content (provisional)
+## Sumário (provisório)
 
-* Chapter 1: Book overview (This chapter)
-* Chapter 2: Background
-* Chapter 3: Getting started
-* Chapter 4: Performance metrics
-* Chapter 5: Model selection
-* Chapter 6: Imbalanced learning
-* Chapter 7: Deep learning
-* Chapter 8: Interpretability*
+* Capítulo 1: Visão geral do livro (Este capítulo)
+* Capítulo 2: Contexto
+* Capítulo 3: Primeiros passos
+* Capítulo 4: Métricas de desempenho
+* Capítulo 5: Seleção de modelo
+* Capítulo 6: Aprendizagem desbalanceada
+* Capítulo 7: Aprendizagem profunda
+* Capítulo 8: Interpretabilidade*
 
-(*): Not yet published. 
+(*): Ainda não publicado.
 
-## Intended audience
+## Público-alvo
 
-* Students or professionals, interested in the specific problem of credit card fraud detection from a practical point of view
-* More generally, data practitioners and data scientists dealing with machine learning problems that involve tabular sequential data and/or imbalanced classification problems
+* Estudantes ou profissionais, interessados no problema específico de detecção de fraude em cartões de crédito de um ponto de vista prático
+* De forma mais geral, praticantes de dados e cientistas de dados que lidam com problemas de aprendizado de máquina que envolvem dados sequenciais tabulares e/ou problemas de classificação desbalanceada
 
-## Prerequisites
+## Pré-requisitos
 
-* Familiarity with the Python language, and the scikit-learn library
-* Familiarity with data science and machine learning processes
+* Familiaridade com a linguagem Python e a biblioteca scikit-learn
+* Familiaridade com processos de ciência de dados e aprendizado de máquina
 
-Recommended books:
+Livros recomendados:
 
 * Gianluca Bontempi. Statistical foundations of machine learning, 2nd Edition. Université Libre de Bruxelles, 2021 {cite}`bontempi2021statistical`
 * Andreas C Müller and Sarah Guido. Introduction to machine learning with Python: a guide for data scientists. O'Reilly Media, Inc., 2016 {cite}`muller2016introduction`
 * Wes McKinney. Python for data analysis: Data wrangling with Pandas, NumPy, and IPython - 2nd Edition. O'Reilly Media, Inc., 2017 {cite}`mckinney2017python`
 
-Machine Learning Group - Recommended publications:
+Machine Learning Group - Publicações recomendadas:
 
 * Wissam Siblini, Guillaume Coter, Rémy Fabry, Liyun He-Guelton, Frédéric Oblé, Bertrand Lebichot, Yann-Aël Le Borgne, and Gianluca Bontempi. Transfer learning for credit card fraud detection: A journey from research to production. In Proceedings of the Data Science and Advanced Analytics (DSAA 2021), 2021 {cite}`siblini2021transfer`
 * Bertrand Lebichot, Théo Verhelst, Yann-Aël Le Borgne, Liyun He-Guelton, Frédéric Oblé, and Gianluca Bontempi. Transfer learning strategies for credit card fraud detection. IEEE access, 9:114754–114766, 2021 {cite}`lebichot2021transfer`
@@ -41,7 +41,4 @@ Machine Learning Group - Recommended publications:
 * Fabrizio Carcillo. Beyond Supervised Learning in Credit Card Fraud Detection: A Dive into Semi-supervised and Distributed Learning. Université libre de Bruxelles, 2018 {cite}`carcillo2018beyond`
 * Andrea Dal Pozzolo, Giacomo Boracchi, Olivier Caelen, Cesare Alippi, and Gianluca Bontempi. Credit card fraud detection: a realistic modeling and a novel learning strategy. IEEE transactions on neural networks and learning systems, 29(8):3784–3797, 2017 {cite}`dal2017credit` 
 * Andrea Dal Pozzolo. Adaptive machine learning for credit card fraud detection. Université libre de Bruxelles, 2015 {cite}`dal2015adaptive`
-* Andrea Dal Pozzolo, Olivier Caelen, Yann-Ael Le Borgne, Serge Waterschoot, and Gianluca Bontempi. Learned lessons in credit card fraud detection from a practitioner perspective. Expert systems with applications, 41(10):4915–4928, 2014 {cite}`dal2014learned` 
-
-
-
+* Andrea Dal Pozzolo, Olivier Caelen, Yann-Ael Le Borgne, Serge Waterschoot, and Gianluca Bontempi. Learned lessons in credit card fraud detection from a practitioner perspective. Expert systems with applications, 41(10):4915–4928, 2014 {cite}`dal2014learned`

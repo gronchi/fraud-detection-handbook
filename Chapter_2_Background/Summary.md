@@ -1,14 +1,7 @@
-# Summary
+# Resumo
 
-Credit card fraud detection (CCFD) is a challenging problem, which requires analyzing large volumes of transaction data to identify fraud patterns. The large volumes of data, together with the evolving techniques of fraudsters, make it impossible for human investigators to efficiently address this problem. In the last decade, CCFD has been increasingly complemented with computer algorithms known as *Machine Learning* (ML), which allows searching and detecting patterns from large amounts of data. ML algorithms have been shown to significantly improve the efficiency of fraud detection systems, and assist fraud investigators in detecting fraudulent transactions.
+A detecção de fraudes em cartões de crédito (CCFD) é um problema desafiador, que requer a análise de grandes volumes de dados de transações para identificar padrões de fraude. Os grandes volumes de dados, juntamente com as técnicas em evolução dos fraudadores, tornam impossível para os investigadores humanos resolverem esse problema com eficiência. Na última década, a CCFD tem sido cada vez mais complementada com algoritmos de computador conhecidos como *Aprendizado de Máquina* (ML), que permitem pesquisar e detectar padrões em grandes quantidades de dados. Os algoritmos de ML demonstraram melhorar significativamente a eficiência dos sistemas de detecção de fraudes e auxiliar os investigadores de fraudes na detecção de transações fraudulentas.
 
-ML for CCFD has become an active research field. This is illustrated by a large number of publications on the topic and their promising claims. At the same time, caution should be addressed in interpreting the results of these publications. As was pointed out in {ref}`ML_For_CCFD`, the field of ML for CCFD is relatively new, and there do not exist any recognized benchmarks, nor methodologies, to compare and assess the proposed techniques {cite}`priscilla2019credit,mekterovic2018systematic,zojaji2016survey`.
+A ML para CCFD tornou-se um campo de pesquisa ativo. Isso é ilustrado por um grande número de publicações sobre o tema e suas alegações promissoras. Ao mesmo tempo, deve-se ter cautela na interpretação dos resultados dessas publicações. Como foi apontado em {ref}`ML_For_CCFD`, o campo da ML para CCFD é relativamente novo, e não existem benchmarks ou metodologias reconhecidas para comparar e avaliar as técnicas propostas {cite}`priscilla2019credit,mekterovic2018systematic,zojaji2016survey`.
 
-This book aims at making a first step in this direction, by proposing reproducible implementations and baseline methodologies to address the topic of ML for CCFD. The proposed implementations and methodologies are based on our experience in the field, following our ten-year collaboration between the [Machine Learning Group - University of Brussels](https://mlg.ulb.ac.be/wordpress/) and the [Worldline payment processor company](https://uk.worldline.com/en/home.html). 
-
-
-
-
-
-
-
+Este livro tem como objetivo dar um primeiro passo nessa direção, propondo implementações reproduzíveis e metodologias de linha de base para abordar o tópico de ML para CCFD. As implementações e metodologias propostas são baseadas em nossa experiência na área, seguindo nossa colaboração de dez anos entre o [Grupo de Aprendizado de Máquina - Universidade de Bruxelas](https://mlg.ulb.ac.be/wordpress/) e a [empresa processadora de pagamentos Worldline](https://uk.worldline.com/en/home.html).
