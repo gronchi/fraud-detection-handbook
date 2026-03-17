@@ -70,4 +70,3 @@ parts:
   numbered: True
   chapters:
   - file: Chapter_References/shared_functions
-  - file: Chapter_References/bibliography
