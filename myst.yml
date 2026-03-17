@@ -19,3 +19,4 @@ site:
   favicon: images/favicon.ico
   options:
     hide_authors: true
+    style: _static/book.css

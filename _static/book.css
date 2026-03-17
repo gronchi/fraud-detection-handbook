@@ -30,3 +30,17 @@ table {
     #width: fit-content !important;
     border: 1px solid black;
 }
+
+/* Translate "References" heading to Portuguese */
+.myst-bibliography-header {
+    font-size: 0;
+}
+.myst-bibliography-header::before {
+    content: "Referências";
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: rgb(28, 25, 23);
+}
+.dark .myst-bibliography-header::before {
+    color: white;
+}
