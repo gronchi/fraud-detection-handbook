@@ -1,44 +1,44 @@
 (Deep_learning)=
-# Introduction
+# Introdução
 
-The most widely used models for fraud detection in the industry or in machine learning competitions {cite}`kaggle2019fraud` are gradient boosting algorithms such as XGBoost {cite}`chen2016xgboost`, LightGBM {cite}`ke2017lightgbm`, CatBoost {cite}`prokhorenkova2017catboost`, and tree-based models such as random forest {cite}`breiman2001random`. With the right preprocessing and feature engineering, these models provide very convincing results in real-world fraud detection systems.
+Os modelos mais amplamente utilizados para detecção de fraude na indústria ou em competições de aprendizado de máquina {cite}`kaggle2019fraud` são algoritmos de gradient boosting como XGBoost {cite}`chen2016xgboost`, LightGBM {cite}`ke2017lightgbm`, CatBoost {cite}`prokhorenkova2017catboost`, e modelos baseados em árvores como florestas aleatórias {cite}`breiman2001random`. Com o pré-processamento e a engenharia de características corretos, esses modelos fornecem resultados muito convincentes em sistemas de detecção de fraude do mundo real.
 
-Neural network algorithms are less often considered in fraud benchmarks with static data as they are more difficult to tune to reach a competitive predictive performance. However, they have many advantages which make them essential in a fraud detection practitioner's toolbox.
+Os algoritmos de redes neurais são menos frequentemente considerados em benchmarks de fraude com dados estáticos, pois são mais difíceis de ajustar para alcançar um desempenho preditivo competitivo. No entanto, eles têm muitas vantagens que os tornam essenciais na caixa de ferramentas de um profissional de detecção de fraude.
 
-## Why using a neural network for fraud detection?
+## Por que usar uma rede neural para detecção de fraude?
 
-There is no reason to assume that a multi-layer feed-forward neural network could outperform random forest or XGBoost on static datasets but there are several other important criteria in the fraud detection problem in addition to the detection performance.
+Não há razão para assumir que uma rede neural feed-forward multicamada poderia superar florestas aleatórias ou XGBoost em conjuntos de dados estáticos, mas existem vários outros critérios importantes no problema de detecção de fraude além do desempenho de detecção.
 
-### Incremental learning
+### Aprendizado incremental
 
-XGBoost and random forest are both tree ensembles. Decision trees are generally not incremental because they require the overall dataset to compute optimal splits and build their structure. Modifying a split given a novel set of data is far from trivial. In particular, as it is built hierarchically, updating a condition in a high split of a tree directly makes the subtrees' structure unusable. It is worth noting that a number of techniques have been proposed to incrementally update trees, like Hoeffding trees {cite}`domingos2000mining`, Mondrian trees {cite}`lakshminarayanan2014mondrian`, or incremental ensembles of trees {cite}`sun2018concept`. Tree-based algorithms however mostly remain used in a batch learning scenario.
+XGBoost e florestas aleatórias são ambos ensembles de árvores. As árvores de decisão geralmente não são incrementais porque exigem o conjunto de dados completo para calcular divisões ótimas e construir sua estrutura. Modificar uma divisão dado um novo conjunto de dados está longe de ser trivial. Em particular, como é construída hierarquicamente, atualizar uma condição em uma divisão alta de uma árvore torna diretamente a estrutura das subárvores inutilizável. Vale notar que diversas técnicas foram propostas para atualizar árvores de forma incremental, como árvores de Hoeffding {cite}`domingos2000mining`, árvores de Mondrian {cite}`lakshminarayanan2014mondrian`, ou ensembles incrementais de árvores {cite}`sun2018concept`. No entanto, os algoritmos baseados em árvores permanecem em sua maioria usados em um cenário de aprendizado em lote.
 
-Incremental learning is useful for fraud detection because (1) it is less resource-intensive as models can be updated often on the last chunks of data instead of having to be fully trained on the whole dataset from scratch every time, and (2) it discards the need to store historical data for a long time thus avoiding data regulation issues.
+O aprendizado incremental é útil para detecção de fraude porque (1) é menos intensivo em recursos, pois os modelos podem ser atualizados frequentemente nos últimos blocos de dados em vez de ter que ser totalmente treinados do zero em todo o conjunto de dados a cada vez, e (2) elimina a necessidade de armazenar dados históricos por muito tempo, evitando assim problemas de regulamentação de dados.
 
-Neural networks have the advantage of being incremental by nature since their training is iterative and instance-wise.
+As redes neurais têm a vantagem de serem incrementais por natureza, pois seu treinamento é iterativo e por instância.
 
-### Representation learning and end-to-end training
+### Aprendizado de representação e treinamento de ponta a ponta
 
-Many studies have shown that additionally to raw transaction features, the use of expert feature engineering (building relevant aggregates based on the cardholder history of transactions) significantly improves the fraud detection rate {cite}`bahnsen2016feature,dal2014learned`. 
+Muitos estudos mostraram que, além das características brutas das transações, o uso de engenharia de características especializada (construção de agregados relevantes com base no histórico de transações do titular do cartão) melhora significativamente a taxa de detecção de fraude {cite}`bahnsen2016feature,dal2014learned`.
 
-However, this process has limitations, primarily that of being dependent on expensive human expert knowledge. There have been attempts to replace manual aggregation through automatic learning of representations {cite}`fu2016credit,jurgovsky2018sequence,dastidar2020nag`. These methods are mainly based on neural networks (Autoencoders, convolutional neural networks, long short-term memory networks).
+No entanto, esse processo tem limitações, principalmente a de depender de conhecimento especializado humano dispendioso. Houve tentativas de substituir a agregação manual por meio do aprendizado automático de representações {cite}`fu2016credit,jurgovsky2018sequence,dastidar2020nag`. Esses métodos são principalmente baseados em redes neurais (autoencoders, redes neurais convolucionais, redes de memória de longo e curto prazo).
 
-Moreover, on top of these learned representations, using a feed-forward neural network instead of XGBoost or random forests is more interesting as it allows training the whole model (representation part + classification part) from one end to the other. 
+Além disso, sobre essas representações aprendidas, usar uma rede neural feed-forward em vez de XGBoost ou florestas aleatórias é mais interessante, pois permite treinar todo o modelo (parte de representação + parte de classificação) de uma extremidade à outra.
 
-### Federated learning
+### Aprendizado federado
 
-Federated learning consists in sharing and training a model on multiple devices with each device keeping its data locally. The idea is to share an initial model between the devices, update it locally, and frequently federate the updates from all devices into a global model for everyone. In general, the global update is computed with methods like federated averaging {cite}`konevcny2016federated`, i.e. through a weighted average of each local model's weights. 
+O aprendizado federado consiste em compartilhar e treinar um modelo em múltiplos dispositivos, com cada dispositivo mantendo seus dados localmente. A ideia é compartilhar um modelo inicial entre os dispositivos, atualizá-lo localmente e federar frequentemente as atualizações de todos os dispositivos em um modelo global para todos. Em geral, a atualização global é calculada com métodos como a média federada {cite}`konevcny2016federated`, ou seja, por meio de uma média ponderada dos pesos de cada modelo local.
 
-Contrary to tree-based models, neural networks with the same architecture can have their weights averaged, which makes them the first choice when it comes to federated learning.
+Ao contrário dos modelos baseados em árvores, redes neurais com a mesma arquitetura podem ter seus pesos calculados em média, o que as torna a primeira escolha quando se trata de aprendizado federado.
 
-### An additional model for stacking
+### Um modelo adicional para empilhamento
 
-Although neural networks might reach a global performance close to XGBoost or random forests, this does not mean that these different models catch the same fraud patterns. In particular, experiments often show that combining a tree-based approach and a neural network into a simple averaging ensemble can lead, thanks to diversity, to a better performance overall.
+Embora as redes neurais possam alcançar um desempenho global próximo ao do XGBoost ou florestas aleatórias, isso não significa que esses diferentes modelos capturam os mesmos padrões de fraude. Em particular, experimentos frequentemente mostram que combinar uma abordagem baseada em árvores e uma rede neural em um ensemble de média simples pode levar, graças à diversidade, a um desempenho geral melhor.
 
-### Take-away message
+### Mensagem principal
 
-Apart from detection performance, neural networks have several advantages for the credit fraud detection problem: they can be stacked to other models, they can be trained incrementally, they can easily be federated, they allow representation learning, and they can learn representations and classification together with end-to-end training.
+Além do desempenho de detecção, as redes neurais têm diversas vantagens para o problema de detecção de fraude em cartão de crédito: elas podem ser empilhadas a outros modelos, podem ser treinadas de forma incremental, podem ser facilmente federadas, permitem o aprendizado de representação e podem aprender representações e classificação juntos com o treinamento de ponta a ponta.
 
-## Content of the chapter
+## Conteúdo do capítulo
 
-This chapter covers techniques to build neural networks for the fraud detection problem. Section 2 describes general considerations to design a first model (fully connected feed-forward neural network). The next sections explore more advanced deep learning techniques to learn useful representations from data. Section 3 and 4 respectively describe the use of autoencoders and sequential models (Convolutional neural networks, long short-term memory networks, and attention mechanism). Finally, section 5 describes the results of all the methods on real-world data, for comparison with the batch methods from chapter 5. 
+Este capítulo cobre técnicas para construir redes neurais para o problema de detecção de fraude. A Seção 2 descreve considerações gerais para projetar um primeiro modelo (rede neural feed-forward totalmente conectada). As próximas seções exploram técnicas de aprendizado profundo mais avançadas para aprender representações úteis a partir dos dados. As Seções 3 e 4 descrevem respectivamente o uso de autoencoders e modelos sequenciais (redes neurais convolucionais, redes de memória de longo e curto prazo e mecanismo de atenção). Por fim, a Seção 5 descreve os resultados de todos os métodos em dados do mundo real, para comparação com os métodos em lote do capítulo 5.
