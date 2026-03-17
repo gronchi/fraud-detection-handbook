@@ -2,11 +2,11 @@
 
 ## Acesso antecipado
 
-Versão preliminar disponível em [https://gronchi.github.io/fraud-detection-handbook/Foreword.html](https://gronchi.github.io/fraud-detection-handbook/Foreword.html).
+Versão preliminar disponível em [https://gronchi.github.io/fraud-detection-handbook/Foreword](https://gronchi.github.io/fraud-detection-handbook/Foreword).
 
 ## Motivações
 
-O aprendizado de máquina para detecção de fraudes em cartões de crédito (ML para CCFD) tornou-se um campo de pesquisa ativo. Isso é ilustrado pela [quantidade notável de publicações sobre o tópico na última década](https://gronchi.github.io/fraud-detection-handbook/Chapter_2_Background/MachineLearningForFraudDetection.html).
+O aprendizado de máquina para detecção de fraudes em cartões de crédito (ML para CCFD) tornou-se um campo de pesquisa ativo. Isso é ilustrado pela [quantidade notável de publicações sobre o tópico na última década](https://gronchi.github.io/fraud-detection-handbook/Chapter_2_Background/MachineLearningForFraudDetection).
 
 Não há dúvida de que a integração de técnicas de aprendizado de máquina em sistemas de detecção de fraude de cartão de pagamento melhorou muito sua capacidade de detectar fraudes com mais eficiência. Ao mesmo tempo, um grande problema neste novo campo de pesquisa é a falta de reprodutibilidade. Não existem benchmarks ou metodologias reconhecidas para comparar e avaliar as técnicas propostas.
 
