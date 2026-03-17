@@ -8,6 +8,8 @@ project:
   bibliography:
     - references.bib
   toc:
+    - file: index
+      hidden: true
     - file: Foreword
       title: Prefácio
     - title: 1. Visão geral do livro
