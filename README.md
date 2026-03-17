@@ -2,11 +2,11 @@
 
 ## Acesso antecipado
 
-Versão preliminar disponível em [https://fraud-detection-handbook.github.io/fraud-detection-handbook/Foreword.html](https://fraud-detection-handbook.github.io/fraud-detection-handbook/Foreword.html).
+Versão preliminar disponível em [https://gronchi.github.io/fraud-detection-handbook/Foreword.html](https://gronchi.github.io/fraud-detection-handbook/Foreword.html).
 
 ## Motivações
 
-O aprendizado de máquina para detecção de fraudes em cartões de crédito (ML para CCFD) tornou-se um campo de pesquisa ativo. Isso é ilustrado pela [quantidade notável de publicações sobre o tópico na última década](https://fraud-detection-handbook.github.io/fraud-detection-handbook/Chapter_2_Background/MachineLearningForFraudDetection.html).
+O aprendizado de máquina para detecção de fraudes em cartões de crédito (ML para CCFD) tornou-se um campo de pesquisa ativo. Isso é ilustrado pela [quantidade notável de publicações sobre o tópico na última década](https://gronchi.github.io/fraud-detection-handbook/Chapter_2_Background/MachineLearningForFraudDetection.html).
 
 Não há dúvida de que a integração de técnicas de aprendizado de máquina em sistemas de detecção de fraude de cartão de pagamento melhorou muito sua capacidade de detectar fraudes com mais eficiência. Ao mesmo tempo, um grande problema neste novo campo de pesquisa é a falta de reprodutibilidade. Não existem benchmarks ou metodologias reconhecidas para comparar e avaliar as técnicas propostas.
 
@@ -31,7 +31,7 @@ Sumário provisório:
 
 A escrita do livro está em andamento. Fornecemos através deste repositório Github um acesso antecipado ao livro. Em janeiro de 2022, os primeiros sete capítulos foram disponibilizados.
 
-A versão online do rascunho atual deste livro está disponível [aqui](https://fraud-detection-handbook.github.io/fraud-detection-handbook/).
+A versão online do rascunho atual deste livro está disponível [aqui](https://gronchi.github.io/fraud-detection-handbook/).
 
 Qualquer comentário ou sugestão é bem-vindo. Recomendamos o uso de issues do Github para iniciar uma discussão sobre um tópico e o uso de pull requests para corrigir erros de digitação.
 
