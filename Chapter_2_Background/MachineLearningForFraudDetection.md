@@ -72,7 +72,7 @@ O domínio de entrada $\mathcal{X}$ geralmente difere do espaço de dados brutos
 
 Para detecção de fraudes, o domínio de saída $\mathcal{Y}$ geralmente é a classe prevista para uma determinada entrada $x$, ou seja, $\mathcal{Y}=\{0,1\}$. Dado que a classe de saída é binária, esses modelos de predição também são chamados de *classificadores binários*. Alternativamente, a saída também pode ser expressa como uma probabilidade de fraude, com $\mathcal{Y}=[0,1]$, ou mais geralmente como uma pontuação de risco, com $\mathcal{Y} = \mathbb{R}$, onde valores mais altos expressam riscos maiores de fraude.
 
-O treinamento (ou construção) de um modelo de predição $h(x,\theta)$ consiste em encontrar os parâmetros $\theta$ que fornecem o melhor desempenho. O desempenho de um modelo de predição é avaliado usando uma função de perda, que compara o rótulo verdadeiro $y$ com o rótulo previsto $\hat{y}=h(x,\theta)$ para uma entrada $x$. Em problemas de classificação binária, uma função de perda comum é a função de perda zero/um $L_{0/1}$, which atribui uma perda igual a um no caso de predição errada e zero caso contrário:
+O treinamento (ou construção) de um modelo de predição $h(x,\theta)$ consiste em encontrar os parâmetros $\theta$ que fornecem o melhor desempenho. O desempenho de um modelo de predição é avaliado usando uma função de perda, que compara o rótulo verdadeiro $y$ com o rótulo previsto $\hat{y}=h(x,\theta)$ para uma entrada $x$. Em problemas de classificação binária, uma função de perda comum é a função de perda zero/um $L_{0/1}$, que atribui uma perda igual a um no caso de predição errada e zero caso contrário:
 
 $$
 \begin{align}
