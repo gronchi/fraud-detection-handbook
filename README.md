@@ -2,7 +2,7 @@
 
 ## Acesso antecipado
 
-Versão preliminar disponível em [https://gronchi.github.io/fraud-detection-handbook/Foreword](https://gronchi.github.io/fraud-detection-handbook/Foreword).
+Versão preliminar disponível em [https://gronchi.github.io/fraud-detection-handbook/](https://gronchi.github.io/fraud-detection-handbook/).
 
 ## Motivações
 
@@ -40,14 +40,10 @@ Qualquer comentário ou sugestão é bem-vindo. Recomendamos o uso de issues do 
 
 Para ler e/ou executar este livro em seu computador, você precisará clonar este repositório e compilar o livro.
 
-Este livro é um Jupyter book. Portanto, você precisará primeiro [instalar o Jupyter Book](https://jupyterbook.org/intro.html#install-jupyter-book).
-
-A compilação foi testada com as seguintes versões de pacotes:
+Este livro utiliza [MyST (Jupyter Book 2)](https://mystmd.org). Você precisará ter o [Node.js](https://nodejs.org) instalado e então instalar o MyST:
 
 ```
-sphinxcontrib-bibtex==2.2.1
-Sphinx==4.2.0
-jupyter-book==0.11.2
+npm install -g mystmd
 ```
 
 Feito isso, este é um processo de duas etapas:
@@ -55,13 +51,13 @@ Feito isso, este é um processo de duas etapas:
 1. Clone este repositório:
 
 ```
-git clone https://github.com/Fraud-Detection-Handbook/fraud-detection-handbook
+git clone https://github.com/gronchi/fraud-detection-handbook
 ```
 
 2. Compile o livro
 
 ```
-jupyter-book build fraud-detection-handbook
+myst build --html
 ```
 
 O livro estará disponível localmente em `fraud-detection-handbook/_build/html/index.html`.

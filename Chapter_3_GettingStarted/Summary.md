@@ -1,21 +1,10 @@
 (Summary_Performance_Metrics)=
-# Summary
+# Resumo
 
+Este capítulo ilustrou que o design de um sistema de detecção de fraude de *linha de base* pode ser alcançado usando estratégias simples de pré-processamento e classificadores padrão de aprendizado de máquina. Em particular, conseguimos obter desempenhos de detecção de fraude bem acima dos de um classificador aleatório.
 
+O capítulo, no entanto, apenas arranhrou a superfície de como abordar um problema de detecção de fraude. Como veremos, um grande número de técnicas mais avançadas pode ser utilizado para melhorar os desempenhos. Os desempenhos podem ser abordados em termos de acurácias de detecção de fraude, mas também em termos de requisitos computacionais (memória/tempos de execução). Este último é, na prática, importante durante o treinamento, pois os sistemas de detecção de fraude precisam lidar com grandes volumes de dados (muito maiores do que os utilizados neste exemplo de linha de base) e também durante a inferência para processamento em tempo real ou quase em tempo real. Em geral, deve-se considerar cuidadosamente os compromissos entre acurácia e requisitos computacionais.
 
-This chapter illustrated that the design of a *baseline* fraud detection system can be achieved using simple preprocessing strategies, and standard machine learning classifiers. In particular, we managed to obtain fraud detection performances that are well above those of a random classifier. 
+Os capítulos avançados cobrirão em detalhes os possíveis caminhos que podem ser explorados para melhorar a abordagem de linha de base proposta.
 
-The chapter however only scratched the surface of how to approach a fraud detection problem. As we will see, a large number of more advanced techniques can be used to improve the performances. Performances can be addressed in terms of fraud detection accuracies, but also in terms of computational requirements (memory/execution times). The latter is in practice important during training, as fraud detection systems must deal with large amounts of data (much higher than those used in this baseline example) and also during inference for real-time or near real-time processing. One must generally carefully considers tradeoffs between accuracy and computational requirements. 
-
-The advanced chapters will cover in detail the possible avenues that can be explored to improve the proposed baseline approach. 
-
-Prior to that, the focus of the next two chapters will more specifically address the experimental methodology, that is, what performance measures should be used, and how these can be estimated. These issues are foundational for finding an objective way to compare the performances of different fraud detection systems and identifying the best performing one. 
-
-
-
-
-
-
-
-
-
+Antes disso, o foco dos próximos dois capítulos abordará mais especificamente a metodologia experimental, ou seja, quais medidas de desempenho devem ser utilizadas e como estas podem ser estimadas. Essas questões são fundamentais para encontrar uma forma objetiva de comparar os desempenhos de diferentes sistemas de detecção de fraude e identificar o de melhor desempenho.
