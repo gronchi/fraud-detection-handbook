@@ -42,7 +42,12 @@ import random
 import sklearn
 from sklearn import *
 
-get_ipython().run_line_magic('matplotlib', 'inline')
+try:
+    ipython = get_ipython()
+    if ipython is not None:
+        ipython.run_line_magic('matplotlib', 'inline')
+except NameError:
+    pass
 
 import matplotlib
 import matplotlib.pyplot as plt
@@ -163,7 +168,7 @@ def get_train_test_set(transactions_df,
         # Compromised cards from that test day, minus the delay period, are added to the pool of known defrauded customers
         test_df_day_delay_period = transactions_df[transactions_df.TX_TIME_DAYS==start_tx_time_days_training+
                                                                                 delta_train+
-                                                                                day-1]
+                                                                                day]
         
         new_defrauded_customers = set(test_df_day_delay_period[test_df_day_delay_period.TX_FRAUD==1].CUSTOMER_ID)
         known_defrauded_customers = known_defrauded_customers.union(new_defrauded_customers)
@@ -230,7 +235,7 @@ def get_train_delay_test_set(transactions_df,
         # Compromised cards from that test day, minus the delay period, are added to the pool of known defrauded customers
         test_df_day_delay_period = transactions_df[transactions_df.TX_TIME_DAYS==start_tx_time_days_training+
                                                                                 delta_train+
-                                                                                day-1]
+                                                                                day]
         
         new_defrauded_customers = set(test_df_day_delay_period[test_df_day_delay_period.TX_FRAUD==1].CUSTOMER_ID)
         known_defrauded_customers = known_defrauded_customers.union(new_defrauded_customers)
@@ -1704,4 +1709,3 @@ class Attention(torch.nn.Module):
         output = F.tanh(self.linear_out(combined.view(-1, 2 * hidden_size))).view(batch_size, -1, hidden_size)
 
         return output, attn
-
